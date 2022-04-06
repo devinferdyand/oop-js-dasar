@@ -1,0 +1,20 @@
+<script>
+  class Mobil {
+    constructor(merk, harga) {
+      this.merk = merk;
+      this.harga = harga;
+    }
+    hidupkan() {
+      return "mesin " + this.merk + "di hidupkan";
+    }
+    pergi(ke) {
+      return "Pergi ke " + ke + " dengan " + this.merk;
+    }
+  }
+  var mobilAndi = new Mobil("Daihatsu Xenia", 150000000);
+  console.log(mobilAndi.merk); // Daihatsu Xenia
+  console.log(mobilAndi.hidupkan());
+
+  // contoh program di bawah adalah pemanggilan dengan retrun isii
+  console.log(mobilAndi.pergi("bandung"));
+</script>
